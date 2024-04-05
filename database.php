@@ -1,5 +1,5 @@
 <?php
-// Conexão com o banco de dados (substitua os valores pelos seus)
+
 $servername = "localhost";
 $username = "seu_usuario";
 $password = "sua_senha";
@@ -11,11 +11,11 @@ if ($conn->connect_error) {
   die("Falha na conexão: " . $conn->connect_error);
 }
 
-// Recebe os dados do formulário
+
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-// Verifica as credenciais no banco de dados
+
 $sql = "SELECT * FROM usuarios WHERE email='$email'";
 $result = $conn->query($sql);
 
