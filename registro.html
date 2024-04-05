@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Registro</title>
+</head>
+<body>
+<h2>Registro de Usuário</h2>
+<form action="processar_registro.php" method="POST">
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome" required><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <label for="senha">Senha:</label><br>
+  <input type="password" id="senha" name="senha" required><br><br>
+  <input type="submit" value="Registrar">
+</form>
+<p>Já possui uma conta? <a href="login.html">Faça login aqui</a>.</p>
+</body>
+</html>
